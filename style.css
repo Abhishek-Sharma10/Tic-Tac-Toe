@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(5, 28, 207);
+    color: rgb(164 255 0);
+    text-align: center;
+}
+.game-field{
+    margin: 3vh 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.game-area{
+    width: 48vh;
+    gap: 1.5vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.game-box{
+    height: 15vh;
+    width: 15vh;
+    background-color: #00ff57;
+}
+.game-box:active{
+    background-color: rgba(0,255,87,0.75);
+}
+.game-button{
+    margin: 5vh;
+    font-size: 2.3vh;
+    height: 5vh;
+    width: 13vh;
+    background-color: black;
+    color: white;
+}
