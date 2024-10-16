@@ -22,6 +22,8 @@ body{
     height: 15vh;
     width: 15vh;
     background-color: #00ff57;
+    color: red;
+    font-size: 10vh;
 }
 .game-box:active{
     background-color: rgba(0,255,87,0.75);
@@ -33,4 +35,10 @@ body{
     width: 13vh;
     background-color: black;
     color: white;
+}
+#msg{
+    font-size: 8vh;
+}
+.hide{
+    display: none;
 }
