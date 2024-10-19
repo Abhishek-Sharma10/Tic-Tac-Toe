@@ -35,6 +35,7 @@ body{
     width: 13vh;
     background-color: black;
     color: white;
+    margin-bottom: 50vh;
 }
 #msg{
     font-size: 8vh;
