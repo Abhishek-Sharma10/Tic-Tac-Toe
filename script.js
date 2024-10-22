@@ -5,6 +5,7 @@ let msgCont = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
 
 let turnO = true;
+let count = 0;
 
 let winPatterns = [
     [0,1,2],
@@ -27,10 +28,23 @@ boxes.forEach((box)=>{
             turnO = true;
         }
         box.disabled = true;
+        count++;
+
+        let isWinner = checkWinner();
+
+    if (count === 9 && !isWinner) {
+      gameDraw();
+    }
 
         checkWinner();
     })
 })
+
+const gameDraw = () => {
+  msg.innerText = `Game was a Draw.`;
+  msgCont.classList.remove("hide");
+  disableBoxes();
+};
 
 let disableBoxes = () => {
     for(let box of boxes) {
